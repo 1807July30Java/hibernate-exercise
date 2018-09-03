@@ -28,7 +28,7 @@ public class Driver {
 //		Category c1 = c.getCategoryById(2);
 //		f.addFlashcard(new Flashcard(q, a, c1));
 //		System.out.println(f.getFlashcards());
-		
+//		 System.out.println(f.getActiveFlashcards());
 	}
 
 }

@@ -13,6 +13,7 @@
 		<!-- choose whether to start fresh or update existing ddl -->
 		<!-- update by default -->
 		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.enable_lazy_load_no_trans">true</property>
 		<!-- locations of domain object mappings -->
 		<mapping class="com.revature.beans.Category"></mapping>
 		<mapping class="com.revature.beans.Flashcard"></mapping>

@@ -33,7 +33,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 		return fl;
 	}
@@ -52,7 +52,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 		return fl;
 	}
@@ -71,7 +71,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 		return fl;
 	}
@@ -87,7 +87,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		return f;
 	}
 
@@ -103,7 +103,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			tx.rollback();
 		}
 
-		sf.close();
+		s.close();
 		
 
 	}
@@ -120,7 +120,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			tx.rollback();
 		}
 
-		sf.close();
+		s.close();
 
 	}
 
@@ -136,7 +136,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			tx.rollback();
 		}
 
-		sf.close();
+		s.close();
 
 	}
 

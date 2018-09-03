@@ -16,7 +16,7 @@ public class Driver {
 		
 		CategoryDao c = new CategoryDaoImpl();
 		
-		c.deleteCategory(new Category(5, "Music", CategoryStatus.INACTIVE));
+		c.addCategory(new Category("Music", CategoryStatus.ACTIVE));
 	}
 	
 	

@@ -4,9 +4,9 @@
 "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 	<session-factory>
-		<property name="hibernate.connection.username">admin</property>
-		<property name="hibernate.connection.password">icewind.13</property>
-		<property name="hibernate.connection.url">jdbc:oracle:thin:@rranarevdb.c6irudcrfjfz.us-east-2.rds.amazonaws.com:1521:orcl</property>
+		<property name="hibernate.connection.username"></property>
+		<property name="hibernate.connection.password"></property>
+		<property name="hibernate.connection.url"></property>
 		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
 		<!-- show_sql useful during development, noisy in production -->
 		<property name="hibernate.show_sql">true</property>

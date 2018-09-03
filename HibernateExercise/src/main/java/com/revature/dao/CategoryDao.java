@@ -2,18 +2,14 @@ package com.revature.dao;
 
 import java.util.List;
 
-import com.revature.beans.Category;
+import org.hibernate.SessionFactory;
 
-public interface CategoryDao {
-	
-	public List<Category> getCategories();
+import com.revature.pojo.Category;
+import com.revature.pojo.Flashcard;
 
-	public Category getCategoryById(int id);
-
-	public int addCategory(Category c);
-
-	public void updateCategory(Category c);
-
-	public void deleteCategory(Category c);
+public interface CategoryDAO {
+	public List<Flashcard> getFlashcardsByCategory(SessionFactory sf,int categoryid);
+	public Category getCategoryById(SessionFactory sf,int categoryid);
+	public int newCategory(SessionFactory sf,String name);
 
 }

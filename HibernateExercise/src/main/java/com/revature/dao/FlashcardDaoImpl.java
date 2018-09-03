@@ -28,7 +28,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 		return flashcards;
 	}
@@ -40,14 +40,14 @@ public class FlashcardDaoImpl implements FlashcardDao {
 		List<Flashcard> flashcards = null;
 		
 		try {
-			Query q = s.createQuery("from Flashcard where category = (from Category where isActive = :categoryStatus)");
+			Query q = s.createQuery("from Flashcard where category (from Category where isActive = :categoryStatus)");
 			q.setParameter("categoryStatus", "ACTIVE");
 			flashcards = q.list();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 		return flashcards;
 	}
@@ -98,7 +98,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 	}
 
@@ -115,7 +115,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 
 	}
 
@@ -132,7 +132,7 @@ public class FlashcardDaoImpl implements FlashcardDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 	}
 

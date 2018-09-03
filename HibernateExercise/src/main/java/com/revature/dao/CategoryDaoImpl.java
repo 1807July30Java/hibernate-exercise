@@ -25,7 +25,7 @@ public class CategoryDaoImpl implements CategoryDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 		return categories;
 	}
@@ -41,7 +41,7 @@ public class CategoryDaoImpl implements CategoryDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 		return category;
 	}
@@ -60,7 +60,7 @@ public class CategoryDaoImpl implements CategoryDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 		
 		return categoryId;
 	}
@@ -78,7 +78,7 @@ public class CategoryDaoImpl implements CategoryDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 	}
 
 	@Override
@@ -94,7 +94,7 @@ public class CategoryDaoImpl implements CategoryDao {
 			e.printStackTrace();
 		}
 
-		sf.close();
+		s.close();
 	}
 
 }

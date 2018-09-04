@@ -14,8 +14,6 @@ import javax.persistence.Table;
 @Table(name="CATEGORY")
 public class Category implements Serializable {
 
-	
-	
 	public Category(int id, String name, CategoryStatus isActive) {
 		super();
 		this.id = id;
